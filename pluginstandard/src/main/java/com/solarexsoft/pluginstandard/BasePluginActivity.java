@@ -54,7 +54,7 @@ public class BasePluginActivity extends Activity implements ActivityStandard {
     @Override
     public ComponentName startService(Intent service) {
         Intent newIntent = new Intent();
-        newIntent.putExtra(KEY_SERVICE_CLASS_NAME, service.getComponent().getClass());
+        newIntent.putExtra(KEY_SERVICE_CLASS_NAME, service.getComponent().getClassName());
         return that.startService(newIntent);
     }
 
