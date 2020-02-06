@@ -1,5 +1,7 @@
 package com.solarexsoft.plugindemo;
 
+import android.os.Bundle;
+
 import com.solarexsoft.pluginstandard.BasePluginActivity;
 
 /**
@@ -11,4 +13,9 @@ import com.solarexsoft.pluginstandard.BasePluginActivity;
  */
 
 public class JumpActivity extends BasePluginActivity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_jump);
+    }
 }
