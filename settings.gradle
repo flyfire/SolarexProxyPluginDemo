@@ -1,0 +1,2 @@
+include ':app', ':pluginstandard', ':plugindemo'
+rootProject.name='ProxyPluginDemo'
