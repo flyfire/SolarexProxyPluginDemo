@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         File srcFile = new File(Environment.getExternalStorageDirectory(), "plugin.apk");
         File dstDir = getDir("plugin", Context.MODE_PRIVATE);
         File dstFile = new File(dstDir, "plugin.apk");
-        FileInputStream fileInputStream;
-        FileOutputStream fileOutputStream;
+        FileInputStream fileInputStream = null;
+        FileOutputStream fileOutputStream = null;
         if (dstFile.exists()) {
             dstFile.delete();
         }
@@ -72,6 +72,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            if (fileInputStream != null) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (fileOutputStream != null) {
+                try {
+                    fileOutputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
 
     }
