@@ -64,6 +64,26 @@ public class PluginManager {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
+        // try to fix, not work, :)
+        /*
+        Resources resources = hostContext.getResources();
+        try {
+            Field assetsField = Resources.class.getDeclaredField("mAssets");
+            assetsField.setAccessible(true);
+            AssetManager assetManager = (AssetManager) assetsField.get(resources);
+            Method addAssetPath = AssetManager.class.getMethod("addAssetPath", String.class);
+            addAssetPath.invoke(assetManager, pluginPath);
+            pluginResources = resources;
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+         */
     }
 
     public PackageInfo getPluginPackageInfo() {
