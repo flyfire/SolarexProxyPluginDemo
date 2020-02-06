@@ -1,0 +1,148 @@
+--------- beginning of main
+02-06 07:55:31.756  6578  6578 E InputEventReceiver: Exception dispatching input event.
+02-06 07:55:31.756  6578  6578 E MessageQueue-JNI: Exception in MessageQueue callback: handleReceiveCallback
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.view.Window.shouldCloseOnTouch(android.content.Context, android.view.MotionEvent)' on a null object reference
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.app.Activity.onTouchEvent(Activity.java:2535)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at com.solarexsoft.proxyplugindemo.core.ProxyActivity.onTouchEvent(ProxyActivity.java:93)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.app.Activity.dispatchTouchEvent(Activity.java:2768)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at com.android.internal.policy.PhoneWindow$DecorView.dispatchTouchEvent(PhoneWindow.java:2364)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.View.dispatchPointerEvent(View.java:9514)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:4230)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4096)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3642)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3695)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3661)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3787)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3669)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:3844)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3642)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3695)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3661)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3669)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3642)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:5922)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:5896)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:5857)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:6025)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:185)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.os.MessageQueue.next(MessageQueue.java:323)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.os.Looper.loop(Looper.java:135)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at java.lang.reflect.Method.invoke(Native Method)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+02-06 07:55:31.757  6578  6578 E MessageQueue-JNI: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+02-06 07:55:31.757  6578  6578 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: FATAL EXCEPTION: main
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: Process: com.solarexsoft.proxyplugindemo, PID: 6578
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.view.Window.shouldCloseOnTouch(android.content.Context, android.view.MotionEvent)' on a null object reference
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.app.Activity.onTouchEvent(Activity.java:2535)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at com.solarexsoft.proxyplugindemo.core.ProxyActivity.onTouchEvent(ProxyActivity.java:93)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.app.Activity.dispatchTouchEvent(Activity.java:2768)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow$DecorView.dispatchTouchEvent(PhoneWindow.java:2364)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.View.dispatchPointerEvent(View.java:9514)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:4230)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4096)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3642)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3695)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3661)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3787)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3669)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:3844)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3642)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3695)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3661)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3669)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3642)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:5922)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:5896)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:5857)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:6025)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:185)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:323)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:135)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+02-06 07:55:31.757  6578  6578 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+--------- beginning of system
+02-06 07:55:31.757   583  1318 W ActivityManager:   Force finishing activity com.solarexsoft.proxyplugindemo/.core.ProxyActivity
+02-06 07:55:31.828   583  2240 I OpenGLRenderer: Initialized EGL, version 1.4
+02-06 07:55:31.886   583  2240 W EGL_emulation: eglSurfaceAttrib not implemented
+02-06 07:55:31.886   583  2240 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdb2ab5e0, error=EGL_SUCCESS
+02-06 07:55:32.286   583   597 W ActivityManager: Activity pause timeout for ActivityRecord{44939d5 u0 com.solarexsoft.proxyplugindemo/.core.ProxyActivity t41 f}
+02-06 07:55:35.401  6578  6578 I Process : Sending signal. PID: 6578 SIG: 9
+02-06 07:55:35.416   583  2240 E Surface : getSlotFromBufferLocked: unknown buffer: 0xde3ea510
+02-06 07:55:35.422   583   653 W InputDispatcher: channel 'a0ad863 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.core.ProxyActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+02-06 07:55:35.423   583   653 E InputDispatcher: channel 'a0ad863 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.core.ProxyActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+02-06 07:55:35.423   583   653 W InputDispatcher: channel '3f09e51 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.core.ProxyActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0xd
+02-06 07:55:35.423   583   653 E InputDispatcher: channel '3f09e51 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.core.ProxyActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+02-06 07:55:35.423   583   653 W InputDispatcher: channel '8d53fa9 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+02-06 07:55:35.423   583   653 E InputDispatcher: channel '8d53fa9 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+02-06 07:55:35.423   583   595 I WindowState: WIN DEATH: Window{3f09e51 u0 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.core.ProxyActivity}
+02-06 07:55:35.423   583   595 W InputDispatcher: Attempted to unregister already unregistered input channel '3f09e51 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.core.ProxyActivity (server)'
+02-06 07:55:35.423   583   760 D GraphicsStats: Buffer count: 4
+02-06 07:55:35.424   583   759 W libprocessgroup: failed to open /acct/uid_10061/pid_6578/cgroup.procs: No such file or directory
+02-06 07:55:35.424   583   759 I ActivityManager: Process com.solarexsoft.proxyplugindemo (pid 6578) has died
+02-06 07:55:35.425   583   760 I WindowState: WIN DEATH: Window{8d53fa9 u0 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.MainActivity}
+02-06 07:55:35.425   583   760 W InputDispatcher: Attempted to unregister already unregistered input channel '8d53fa9 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.MainActivity (server)'
+02-06 07:55:35.431   583  1318 I WindowState: WIN DEATH: Window{a0ad863 u0 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.core.ProxyActivity}
+02-06 07:55:35.431   583  1318 W InputDispatcher: Attempted to unregister already unregistered input channel 'a0ad863 com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.core.ProxyActivity (server)'
+02-06 07:55:35.466   583   759 I ActivityManager: Start proc 6628:com.solarexsoft.proxyplugindemo/u0a61 for activity com.solarexsoft.proxyplugindemo/.core.ProxyActivity
+02-06 07:55:35.498  6628  6628 E libprocessgroup: failed to make and chown /acct/uid_10061: Read-only file system
+02-06 07:55:35.498  6628  6628 W Zygote  : createProcessGroup failed, kernel missing CONFIG_CGROUP_CPUACCT?
+02-06 07:55:35.498  6628  6628 I art     : Late-enabling -Xcheck:jni
+02-06 07:55:35.549  6628  6628 W System  : ClassLoader referenced unknown path: /data/app/com.solarexsoft.proxyplugindemo-2/lib/x86
+02-06 07:55:35.554  6628  6628 D AndroidRuntime: Shutting down VM
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: FATAL EXCEPTION: main
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: Process: com.solarexsoft.proxyplugindemo, PID: 6628
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.solarexsoft.proxyplugindemo/com.solarexsoft.proxyplugindemo.core.ProxyActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.content.res.Resources.getBoolean(int)' on a null object reference
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.content.res.Resources.getBoolean(int)' on a null object reference
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.view.Window.getDefaultFeatures(Window.java:1337)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.view.Window.<init>(Window.java:480)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.<init>(PhoneWindow.java:305)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.app.Activity.attach(Activity.java:6179)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2350)
+02-06 07:55:35.555  6628  6628 E AndroidRuntime: 	... 9 more
+02-06 07:55:35.557   583   594 W ActivityManager:   Force finishing activity com.solarexsoft.proxyplugindemo/.core.ProxyActivity
+02-06 07:55:36.077   583   597 W ActivityManager: Activity pause timeout for ActivityRecord{5d596c7 u0 com.solarexsoft.proxyplugindemo/.core.ProxyActivity t41 f}
+02-06 07:55:36.131   583  2240 I OpenGLRenderer: Initialized EGL, version 1.4
+02-06 07:55:36.590   583  2240 W EGL_emulation: eglSurfaceAttrib not implemented
+02-06 07:55:36.590   583  2240 W OpenGLRenderer: Failed to set EGL_SWAP_BEHAVIOR on surface 0xdb2ab9c0, error=EGL_SUCCESS
+02-06 07:55:36.745   583   598 I Choreographer: Skipped 64 frames!  The application may be doing too much work on its main thread.
+02-06 07:55:37.960   583   602 I Choreographer: Skipped 144 frames!  The application may be doing too much work on its main thread.
+02-06 07:55:37.991   583   598 I Choreographer: Skipped 74 frames!  The application may be doing too much work on its main thread.
+02-06 07:55:40.007   583   602 W AppOps  : Finishing op nesting under-run: uid 1000 pkg android code 24 time=0 duration=0 nesting=0
+02-06 07:55:40.008   583   602 I Choreographer: Skipped 120 frames!  The application may be doing too much work on its main thread.
+02-06 07:55:40.210   583   602 W WindowAnimator: Failed to dispatch window animation state change.
+02-06 07:55:40.210   583   602 W WindowAnimator: android.os.DeadObjectException
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.os.BinderProxy.transactNative(Native Method)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.os.BinderProxy.transact(Binder.java:557)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.view.IWindow$Stub$Proxy.onAnimationStopped(IWindow.java:534)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at com.android.server.wm.WindowAnimator.updateWindowsLocked(WindowAnimator.java:286)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at com.android.server.wm.WindowAnimator.animateLocked(WindowAnimator.java:678)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at com.android.server.wm.WindowAnimator.-wrap0(WindowAnimator.java)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at com.android.server.wm.WindowAnimator$1.doFrame(WindowAnimator.java:123)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:856)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.view.Choreographer.doFrame(Choreographer.java:603)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.os.Handler.handleCallback(Handler.java:739)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.os.Looper.loop(Looper.java:148)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+02-06 07:55:40.210   583   602 W WindowAnimator: 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+02-06 07:55:41.785   583   597 W ActivityManager: Launch timeout has expired, giving up wake lock!
+02-06 07:55:55.553   583   597 W ActivityManager: Activity destroy timeout for ActivityRecord{5d596c7 u0 com.solarexsoft.proxyplugindemo/.core.ProxyActivity t41 f}
