@@ -3,6 +3,7 @@ package com.solarexsoft.proxyplugindemo.core;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.MotionEvent;
 
@@ -90,5 +91,15 @@ public class ProxyActivity extends Activity {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         return proxyee.onTouchEvent(event);
+    }
+
+    @Override
+    public ClassLoader getClassLoader() {
+        return PluginManager.getInstance().getPluginClassLoader();
+    }
+
+    @Override
+    public Resources getResources() {
+        return PluginManager.getInstance().getPluginResources();
     }
 }

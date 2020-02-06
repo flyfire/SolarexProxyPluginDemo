@@ -41,7 +41,12 @@ public class ProxyService extends Service {
     private void init(Intent intent) {
         String actualServiceName = intent.getStringExtra(KEY_SERVICE_CLASS_NAME);
         try {
-            Class<?> clz = PluginManager.getInstance().getPluginClassLoader().loadClass(actualServiceName);
+            ClassLoader classLoader = PluginManager.getInstance().getPluginClassLoader();
+            if (classLoader == null) {
+                PluginManager.getInstance().attachBaseContext(this.getApplicationContext());
+                PluginManager.getInstance().loadPath();
+            }
+            Class<?> clz = classLoader.loadClass(actualServiceName);
             Object instance = clz.newInstance();
             proxyee = (ServiceStandard) instance;
             proxyee.attach(this);
