@@ -47,14 +47,14 @@ public class ProxyActivity extends Activity {
     @Override
     public void startActivity(Intent intent) {
         Intent newIntent = new Intent(this, ProxyActivity.class);
-        newIntent.putExtra(KEY_ACTIVITY_CLASSNAME, intent.getStringExtra(KEY_ACTIVITY_CLASSNAME));
+        newIntent.putExtra(KEY_ACTIVITY_CLASSNAME, intent.getComponent().getClassName());
         super.startActivity(newIntent);
     }
 
     @Override
     public ComponentName startService(Intent service) {
         Intent newIntent = new Intent(this, ProxyService.class);
-        newIntent.putExtra(KEY_SERVICE_CLASS_NAME, service.getStringExtra(KEY_SERVICE_CLASS_NAME));
+        newIntent.putExtra(KEY_SERVICE_CLASS_NAME, service.getComponent().getClass());
         return super.startService(newIntent);
     }
 
