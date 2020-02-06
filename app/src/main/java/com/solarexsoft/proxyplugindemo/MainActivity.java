@@ -1,9 +1,11 @@
 package com.solarexsoft.proxyplugindemo;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -13,6 +15,12 @@ import androidx.core.content.ContextCompat;
 
 import com.solarexsoft.proxyplugindemo.core.PluginManager;
 import com.solarexsoft.proxyplugindemo.core.ProxyActivity;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 import static com.solarexsoft.pluginstandard.ActivityStandard.KEY_ACTIVITY_CLASSNAME;
 
@@ -44,6 +52,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void copySdcardApkFile() {
+        File srcFile = new File(Environment.getExternalStorageDirectory(), "plugin.apk");
+        File dstDir = getDir("plugin", Context.MODE_PRIVATE);
+        File dstFile = new File(dstDir, "plugin.apk");
+        FileInputStream fileInputStream;
+        FileOutputStream fileOutputStream;
+        if (dstFile.exists()) {
+            dstFile.delete();
+        }
+        try {
+            fileInputStream = new FileInputStream(srcFile);
+            fileOutputStream = new FileOutputStream(dstFile);
+            int len = 0;
+            byte[] buffer = new byte[1024];
+            while ((len = fileInputStream.read(buffer)) != -1) {
+                fileOutputStream.write(buffer, 0, len);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
